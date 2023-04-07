@@ -6,18 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="order-application" />
+        <module name="common2" />
         <module name="order-messaging" />
-        <module name="order-domain-core" />
+        <module name="common2-domain" />
         <module name="order-application-service" />
+        <module name="order-application" />
+        <module name="order-domain-core" />
         <module name="order-dataaccess" />
         <module name="order-container" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="17" />
+      <module name="common-domain" target="17" />
+      <module name="commonplace-domain" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="food-ordering-system2" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="common-domain" options="-parameters" />
+      <module name="common2" options="-parameters" />
+      <module name="common2-domain" options="-parameters" />
+      <module name="commonplace-domain" options="-parameters" />
+      <module name="food-ordering-system" options="-parameters" />
       <module name="order-application" options="-parameters" />
       <module name="order-application-service" options="-parameters" />
       <module name="order-container" options="-parameters" />
