@@ -1,4 +1,4 @@
-package com.food.ordering.system.order.service.domain.create;
+package com.food.ordering.system.order.service.domain.dto.create;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,21 +6,18 @@ import lombok.Getter;
 
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.UUID;
 
 @Builder
 @Getter
 @AllArgsConstructor
-public class CreateOrderCommand {
+public class OrderItem {
     @NotNull
-    private final UUID customerId;
+    private final UUID productId;
     @NotNull
-    private final UUID restaurantId;
+    private final Integer quantity;
     @NotNull
     private final BigDecimal price;
     @NotNull
-    private final List<OrderItem> items;
-    @NotNull
-    private final OrderAddress address;
+    private final BigDecimal subTotal;
 }
