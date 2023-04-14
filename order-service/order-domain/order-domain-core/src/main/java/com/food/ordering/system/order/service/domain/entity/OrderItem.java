@@ -93,5 +93,6 @@ public class OrderItem extends BaseEntity<OrderItemId> {
         public OrderItem build() {
             return new OrderItem(this);
         }
+
     }
 }
